@@ -45,7 +45,6 @@ class AlbumRecyclerAdapter(val callback: PushControllerCallback) :
         Glide
             .with(context)
             .asBitmap()
-            .override(200, 200)
             .placeholder(R.drawable.ic_launcher_foreground)
             .load(dataList[position].dataPath ?: R.drawable.empty)
             .into(holder.viewBinding.albumItem)

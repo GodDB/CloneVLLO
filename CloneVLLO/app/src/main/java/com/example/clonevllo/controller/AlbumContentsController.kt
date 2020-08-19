@@ -72,7 +72,7 @@ class AlbumContentsController(private var data: Bundle) : Controller(data), Push
                 }
 
             val dpi: Float = resources.displayMetrics.density
-            addItemDecoration(RecyclerDecoration(10 * dpi.toInt()))
+            addItemDecoration(RecyclerDecoration(5 * dpi.toInt()))
         }
     }
 
